@@ -30,7 +30,7 @@ function addTask() {
     // FOR DONE BUTTON
     let doneBttn = document.createElement("button");
     doneBttn.className =
-      "bg-[#839AC3] py-1 px-4 rounded-full font-bold text-sm shadow-lg active:scale-105";
+      "bg-[#839AC3] py-1 px-4 rounded-full font-bold text-sm shadow-lg";
     doneBttn.innerHTML = "DONE";
     console.log(doneBttn.value);
     listCont.appendChild(doneBttn);
