@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <main class="grid place-items-center min-h-screen bg-[#43516B]">
+      <!-- BOX -->
+      <div
+        class="font-Poppins bg-[#243A63] p-6 rounded-lg text-white shadow-lg min-w-[320px] max-xl:"
+      >
+        <h1 class="text-center pb-4 font-bold text-xl">TODO LIST</h1>
+        <h2 class="font-bold">ADD TODO LIST</h2>
+        <form action="" class="flex flex-col justify-center items-center">
+          <input
+            type="text"
+            class="rounded-full text-lg p-1 pl-4 outline-none text-black my-1 w-full"
+            id="addTodo"
+          />
+          <button
+            class="bg-[#839AC3] py-1 px-12 rounded-full font-bold my-2 mb-4 shadow-lg"
+            id="addBttn"
+            type="button"
+            onclick="addTask()"
+          >
+            ADD
+          </button>
+        </form>
+        <ul id="todoContainer">
+          <!-- <li class="border-y-[1px] border-white">
+            <div class="flex items-center justify-between p-2">
+              <div class="flex items-center gap-4">
+                <input type="checkbox" />
+                <p>Todo 1</p>
+              </div>
+
+              <button
+                class="bg-[#839AC3] py-1 px-4 rounded-full font-bold text-sm shadow-lg"
+              >
+                DONE
+              </button>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
